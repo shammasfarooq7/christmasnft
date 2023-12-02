@@ -1,8 +1,15 @@
 import Button from "../../components/button";
+import { ReactComponent as UserListSvg } from "../../assets/svg/user-list.svg"
+import { ReactComponent as PageDividerSvg } from "../../assets/svg/page-divider.svg"
+import { ReactComponent as LinkIcon } from "../../assets/svg/link-icon.svg"
+import ArtCollectionImages from "../../components/art-collection-images";
+import SoccerCollectionImages from "../../components/soccer-collection-images";
+import ChristmasCollectionImages from "../../components/christmas-collection-images";
 
 const LandingPage = () => {
     return (
-        <div className="mt-10">
+        <div className="flex flex-col items-center justify-center mt-10">
+            {/* main */}
             <div className="flex flex-col items-center justify-center">
                 <div className="flex items-center">
                     <div>
@@ -31,12 +38,67 @@ const LandingPage = () => {
                             divided into different<br /> collections.
                         </div>
                         <Button className={"mt-10"}>DISCOVER ALL</Button>
+
+                        <div className="mt-[114px] flex items-center space-x-5">
+                            <UserListSvg />
+                            <div className="font-bold text-[32px]">
+                                47k+
+                                <div className="text-xs font-normal">
+                                    Community members
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div>
-
                     </div>
                 </div>
             </div>
+            <PageDividerSvg className="mt-20" />
+
+            {/* Art Collection */}
+            <div className="mt-[200px] flex flex-col items-center justify-center">
+                <div className="text-[64px] font-bold text-center">
+                    Art <span className="text-gradient-high-quality">collection</span>
+                </div>
+                <ArtCollectionImages />
+
+                <Button className={"mt-[100px] flex items-center space-x-2"}>
+                    <span>View collection</span>
+                    <LinkIcon />
+                </Button>
+
+            </div>
+
+            <PageDividerSvg className="mt-20" />
+
+            {/* Soccer Collection */}
+            <div className="mt-[200px] flex flex-col items-center justify-center">
+                <div className="text-[64px] font-bold text-center">
+                    Soccer  <span className="text-gradient-high-quality">collection</span>
+                </div>
+                <SoccerCollectionImages />
+
+                <Button className={"mt-[100px] flex items-center space-x-2"}>
+                    <span>View collection</span>
+                    <LinkIcon />
+                </Button>
+            </div>
+
+            <PageDividerSvg className="mt-20" />
+
+            {/* Christams Collection */}
+            <div className="mt-[200px] flex flex-col items-center justify-center">
+                <div className="text-[64px] font-bold text-center">
+                    Christmas  <span className="text-gradient-high-quality">collection</span>
+                </div>
+                <ChristmasCollectionImages />
+
+                <Button className={"mt-[100px] flex items-center space-x-2"}>
+                    <span>View collection</span>
+                    <LinkIcon />
+                </Button>
+            </div>
+
         </div>
     );
 };

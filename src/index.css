@@ -20,3 +20,9 @@ code {
 .bg-purple-gradient {
   background: linear-gradient(62deg, #2600FC 0%, #FA24FA 100%);
 }
+
+.text-gradient-high-quality {
+  background: -webkit-linear-gradient(71deg, #2600FC 0%, #FA24FA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
