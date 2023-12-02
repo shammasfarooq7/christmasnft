@@ -2,9 +2,12 @@ import Button from "../../components/button";
 import { ReactComponent as UserListSvg } from "../../assets/svg/user-list.svg"
 import { ReactComponent as PageDividerSvg } from "../../assets/svg/page-divider.svg"
 import { ReactComponent as LinkIcon } from "../../assets/svg/link-icon.svg"
+import { ReactComponent as StarsIcon } from "../../assets/svg/stars.svg"
+import Logo from "../../assets/images/Logo.png"
 import ArtCollectionImages from "../../components/art-collection-images";
 import SoccerCollectionImages from "../../components/soccer-collection-images";
 import ChristmasCollectionImages from "../../components/christmas-collection-images";
+import Footer from "../../components/footer";
 
 const LandingPage = () => {
     return (
@@ -12,11 +15,14 @@ const LandingPage = () => {
             {/* main */}
             <div className="flex flex-col items-center justify-center">
                 <div className="flex items-center">
-                    <div>
-                        <div className="font-semibold text-[40px]">Chainblock</div>
-                        <div className="text-[#FA24FA] font-semibold text-[40px] leading-tight">
-                            ART
+                    <div className="flex items-center space-x-3">
+                        <img src={Logo} />
+                        <div className="font-semibold text-[40px]">Chainblock
+                            <div className="text-[#FA24FA] font-semibold text-[40px] leading-tight">
+                                ART
+                            </div>
                         </div>
+
                     </div>
                     <div className="flex items-center space-x-8 ml-[130px]">
                         <div className="text-lg font-bold">Home</div>
@@ -28,7 +34,7 @@ const LandingPage = () => {
                     <Button className={"ml-[170px]"}>CONNECT WALLET</Button>
                 </div>
 
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2 mt-[150px]">
                     <div className="w-[520px]">
                         <div className="font-bold text-[72px] leading-tight">
                             High Quality NFT Collection
@@ -50,6 +56,7 @@ const LandingPage = () => {
                         </div>
                     </div>
                     <div>
+                        <StarsIcon />
                     </div>
                 </div>
             </div>
@@ -98,7 +105,8 @@ const LandingPage = () => {
                     <LinkIcon />
                 </Button>
             </div>
-
+            {/* Footer */}
+            <Footer />
         </div>
     );
 };
