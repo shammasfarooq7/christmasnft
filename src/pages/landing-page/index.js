@@ -2,7 +2,7 @@ import Button from "../../components/button";
 import { ReactComponent as UserListSvg } from "../../assets/svg/user-list.svg"
 import { ReactComponent as PageDividerSvg } from "../../assets/svg/page-divider.svg"
 import { ReactComponent as LinkIcon } from "../../assets/svg/link-icon.svg"
-import { ReactComponent as StarsIcon } from "../../assets/svg/zero-percent.svg"
+import { ReactComponent as StarsIcon } from "../../assets/svg/stars.svg"
 import Logo from "../../assets/images/Logo.png"
 import ArtCollectionImages from "../../components/art-collection-images";
 import SoccerCollectionImages from "../../components/soccer-collection-images";
