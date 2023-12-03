@@ -2,13 +2,14 @@ import Button from "../../components/button";
 import { ReactComponent as UserListSvg } from "../../assets/svg/user-list.svg"
 import { ReactComponent as PageDividerSvg } from "../../assets/svg/page-divider.svg"
 import { ReactComponent as LinkIcon } from "../../assets/svg/link-icon.svg"
-import { ReactComponent as StarsIcon } from "../../assets/svg/stars.svg"
+import { ReactComponent as StarsIcon } from "../../assets/svg/zero-percent.svg"
 import Logo from "../../assets/images/Logo.png"
 import ArtCollectionImages from "../../components/art-collection-images";
 import SoccerCollectionImages from "../../components/soccer-collection-images";
 import ChristmasCollectionImages from "../../components/christmas-collection-images";
 import Footer from "../../components/footer";
 import ChooseUsCards from "../../components/choose-us-cards";
+import RoadMapCards from "../../components/roadmap-cards";
 
 const LandingPage = () => {
     return (
@@ -106,6 +107,7 @@ const LandingPage = () => {
                     <LinkIcon />
                 </Button>
             </div>
+            <PageDividerSvg className="mt-20" />
 
             {/* Choose Us */}
             <div className="mt-[200px] flex flex-col items-center justify-center">
@@ -113,6 +115,15 @@ const LandingPage = () => {
                     Why  <span className="text-gradient-high-quality">choose us?</span>
                 </div>
                 <ChooseUsCards />
+            </div>
+            <PageDividerSvg className="mt-20" />
+
+            {/* Chainblock Roadmap */}
+            <div className="mt-[200px] flex flex-col items-center justify-center">
+                <div className="text-[64px] font-bold text-center">
+                    Chainblock  <span className="text-gradient-high-quality">Roadmap</span>
+                </div>
+                <RoadMapCards />
             </div>
             <PageDividerSvg className="mt-20" />
 
