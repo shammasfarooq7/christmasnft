@@ -8,6 +8,7 @@ import ArtCollectionImages from "../../components/art-collection-images";
 import SoccerCollectionImages from "../../components/soccer-collection-images";
 import ChristmasCollectionImages from "../../components/christmas-collection-images";
 import Footer from "../../components/footer";
+import ChooseUsCards from "../../components/choose-us-cards";
 
 const LandingPage = () => {
     return (
@@ -105,6 +106,16 @@ const LandingPage = () => {
                     <LinkIcon />
                 </Button>
             </div>
+
+            {/* Choose Us */}
+            <div className="mt-[200px] flex flex-col items-center justify-center">
+                <div className="text-[64px] font-bold text-center">
+                    Why  <span className="text-gradient-high-quality">choose us?</span>
+                </div>
+                <ChooseUsCards />
+            </div>
+            <PageDividerSvg className="mt-20" />
+
             {/* Footer */}
             <Footer />
         </div>
