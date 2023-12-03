@@ -19,9 +19,15 @@ const Footer = () => {
                         Follow us on social media to stay updated on our collections, new artists, new works and much more.
                     </div>
                     <div className="flex items-center space-x-5 mt-8">
-                        <img src={TwitterLogo} alt="" />
-                        <img src={InstaLogo} alt="" />
-                        <img src={YoutubeLogo} alt="" />
+                        <a href="https://twitter.com/chainblock" target="_blank">
+                            <img src={TwitterLogo} alt="Twitter Logo" />
+                        </a>
+                        <a href="https://www.instagram.com/chainblockgroup/" target="_blank">
+                            <img src={InstaLogo} alt="Insta Logo" />
+                        </a>
+                        <a href="https://www.facebook.com/chainblockgroup" target="_blank">
+                            <img src={TwitterLogo} alt="Youtube Logo" />
+                        </a>
                     </div>
                 </div>
                 <div className="flex items-center justify-end space-x-10 w-full ">
@@ -43,8 +49,8 @@ const Footer = () => {
             <div className="flex items-center justify-between mt-20">
                 <span className="text-[#B7B4BB] text-[17px]">Copyright © 2023 More. All Rights Reserved.</span>
                 <div className="flex items-center justify-end space-x-5">
-                    <a href="" target="_blank" className="text-[#B7B4BB] text-[17px]">Privacy policy</a>
-                    <a href="" target="_blank" className="text-[#B7B4BB] text-[17px]">Terms of Use</a>
+                    <a href="https://chainblock.it/privacy-policy" target="_blank" className="text-[#B7B4BB] text-[17px]">Privacy policy</a>
+                    <a href="https://chainblock.it/termini-e-condizioni" target="_blank" className="text-[#B7B4BB] text-[17px]">Terms of Use</a>
                 </div>
             </div>
 

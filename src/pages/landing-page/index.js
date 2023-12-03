@@ -11,10 +11,13 @@ import Footer from "../../components/footer";
 import ChooseUsCards from "../../components/choose-us-cards";
 import RoadMapCards from "../../components/roadmap-cards";
 import ConnectWallet from "../../components/connect-wallet";
+import { useTranslation } from "react-i18next";
+
 
 const LandingPage = () => {
+  const {t, i18n} = useTranslation();
     return (
-        <div className="flex flex-col items-center justify-center mt-10">
+        <div className="flex flex-col items-center justify-center">
             {/* main */}
             <div className="flex flex-col items-center justify-center">
                 <div className="flex items-center">
@@ -28,13 +31,13 @@ const LandingPage = () => {
 
                     </div>
                     <div className="flex items-center space-x-8 ml-[130px]">
-                        <div className="text-lg font-bold">Home</div>
-                        <div className="text-lg font-bold">Collection</div>
-                        <div className="text-lg font-bold">Choose</div>
-                        <div className="text-lg font-bold">Roadmap</div>
-                        <div className="text-lg font-bold">Artists</div>
+                        <div className="text-lg font-bold">{t("Home")}</div>
+                        <div className="text-lg font-bold">{t("Collection")}</div>
+                        <div className="text-lg font-bold">{t("Choose")}</div>
+                        <div className="text-lg font-bold">{t("Roadmap")}</div>
+                        <div className="text-lg font-bold">{t("Artists")}</div>
                     </div>
-                    <Button className={"ml-[170px]"}>CONNECT WALLET</Button>
+                    <Button className={"ml-[170px]"}>{t("ConnectW")}</Button>
                 </div>
 
                 <div className="flex items-center space-x-2 mt-[150px]">
