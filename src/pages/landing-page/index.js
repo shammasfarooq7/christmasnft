@@ -10,6 +10,7 @@ import ChristmasCollectionImages from "../../components/christmas-collection-ima
 import Footer from "../../components/footer";
 import ChooseUsCards from "../../components/choose-us-cards";
 import RoadMapCards from "../../components/roadmap-cards";
+import ConnectWallet from "../../components/connect-wallet";
 
 const LandingPage = () => {
     return (
@@ -124,6 +125,15 @@ const LandingPage = () => {
                     Chainblock  <span className="text-gradient-high-quality">Roadmap</span>
                 </div>
                 <RoadMapCards />
+            </div>
+            <PageDividerSvg className="mt-20" />
+
+               {/* Connect Wallet */}
+               <div className="mt-[200px] flex flex-col items-center justify-center">
+                <div className="text-[64px] font-bold text-center">
+                Connect  <span className="text-gradient-high-quality">Wallet</span>
+                </div>
+                <ConnectWallet/>
             </div>
             <PageDividerSvg className="mt-20" />
 
