@@ -37,19 +37,18 @@ const LandingPage = () => {
                         <div className="text-lg font-bold">{t("Roadmap")}</div>
                         <div className="text-lg font-bold">{t("Artists")}</div>
                     </div>
-                    <Button className={"ml-[170px]"}>{t("ConnectW")}</Button>
+                    <Button className={"ml-[170px] flex items-center justify-center overflow-hidden truncate"}>{t("ConnectW")}</Button>
                 </div>
 
                 <div className="flex items-center space-x-2 mt-[150px]">
                     <div className="w-[520px]">
                         <div className="font-bold text-[72px] leading-tight">
-                            High Quality NFT Collection
+                            {t("LF")}
                         </div>
                         <div className="text-[#B7B4BB] font-normal text-[22px] mt-10">
-                            Chainblock offers you many works of<br /> famous artists,
-                            divided into different<br /> collections.
+                        {t("LFB1")}<br /> {t("LFB2")}<br /> {t("LFB3")}
                         </div>
-                        <Button className={"mt-10"}>DISCOVER ALL</Button>
+                        <Button className={"mt-10"}>{t("DSA")}</Button>
 
                         <div className="mt-[114px] flex items-center space-x-5">
                             <UserListSvg />
